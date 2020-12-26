@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guest me</title>
+</head>
+<body style='background-color: darkcyan;text-align:center;color:white;'>
+    <script src='app.js'></script>
+    <div id='div1'>
+        <h1>Rules</h1>
+        <p style='font-family:Arial, Helvetica, sans-serif; font-size: 24px;'>the rule of this game are simple , just give me a number and i will request form you some calculs to do with it and just give me the result at the end</p>
+        <ol  style='font-family:Arial, Helvetica, sans-serif; font-size: 24px;'>
+            <li>Dont use a calculator ! </li>
+            <li>Dont cheat</li>
+            <li> IT's just a game</li>
+        </ol>
+    </div>
+    <form id='jdkk' style='background:yellow;margin-left:500px; margin-right:500px; border:solid 10px midnightblue; border-radius:5rem' name='userNumber'>
+        <br/>
+        <u><label style='color:orange;font-weight:bold;font-size:20px;'for='number'>Enter Your number</label><br/><br/></u>
+        <input style='padding:10px 10px; border-radius:5rem;'id = 'usernum'type='number' name='usrNumber' value='' placeholder='enter your number'>
+        <br/><br/>
+        <input class='dd' style='background:orange;  padding:10px 10px; border-radius:5rem;' type='button' value='enter' onclick=numberInter()>
+        <style>
+         .dd:hover{
+                color:indigo;
+                background-color:orangered;
+                width: 100px;
+                height:50px;
+                transition:all 0.8s ease-in-out;
+            }
+            *{
+                list-style: none;
+                text-decoration: none;
+}
+        </style>
+
+        <br/>
+        <br/>
+    </form>
+    <h1> -------------------------------------------------------------------------------------------- </h1>
+    <form  name='calcul'>
+        <div id = 'nfkjf'style=' display :none;margin-left:500px; margin-right:500px; border:solid 10px midnightblue; border-radius:5rem'>
+        <h1 id='request'></h1>
+        <u><label style='color:orange;font-weight:bold;font-size:20px;'for='number'>Enter result</label><br/><br/></u>
+        <input style='padding:10px 10px; border-radius:5rem;'id = 'usernum'type='number' name='userresult' placeholder='enter your result'>
+        <br/><br/>
+        <input class='dd' style='background:orange;  padding:10px 10px; border-radius:5rem;' type='button' value='enter' onclick=check()>
+        <style>
+         .dd:hover{
+                color:indigo;
+                background-color:orangered;
+                width: 100px;
+                height:50px;
+                transition:all 0.8s ease-in-out;
+            }
+        </style>
+        </div>
+        <h1  id='resultDeclaration'></h1>
+        <input id='hdm' type='button' value ='restart' onclick=rets() style='background:orange;  padding:10px 10px; border-radius:5rem;'>
+    </form>
+</body>
+</html>
