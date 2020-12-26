@@ -45,6 +45,6 @@ if(kjsh_dn== true){
     window.location.reload();
 }
 else{
-    console.lof('0')
+    console.log('0')
 }
 }
